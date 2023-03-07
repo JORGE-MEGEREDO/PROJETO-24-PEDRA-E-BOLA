@@ -37,9 +37,9 @@ function setup() {
 
   var rock_options = {
        /*ESCOLHA UM DOS CÓDIGOS DE RESTITUTION/ELASTICIDADE E RETIRE O "//" DELE. A PEDRA PRECISA TER UM VALOR MENOR QUE DA BOLA */
-    // restitution: 0.2,
+     restitution: 0.2,
     // restitution: 1,
-    restitution: -0.8,
+    //restitution: -0.8,
     // restitution: 0.75,
 
   }
@@ -87,7 +87,7 @@ function vForce()
 
   // Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0});
 
-  // Matter.Body.applyForce(ball,{x:0,y:0},{x:0.5,y:0});
+  Matter.Body.applyForce(ball,{x:0,y:0},{x:0.5,y:0});
 
- Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0.05});
+ //Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0.05});
 }
